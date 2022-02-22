@@ -60,7 +60,6 @@ public class RedisCommand implements Runnable {
         /*
             jedis connection
          */
-        System.out.println("redis connection start");
         jedisPoolConfig = new JedisPoolConfig();
         pool = new JedisPool(jedisPoolConfig, IP, PORT, TIME_OUT);
         jedis = pool.getResource();
