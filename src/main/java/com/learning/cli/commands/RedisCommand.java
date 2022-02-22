@@ -21,7 +21,8 @@ public class RedisCommand implements Runnable {
     @Option(
             names = {"-c", "--count"},
             description = "Provide test count",
-            paramLabel = "<test count>"
+            paramLabel = "<test count>",
+            required = true
     )
     int testCount;
 
